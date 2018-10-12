@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="plik1.css"?>
+<!DOCTYPE Uczelnia SYSTEM "Zad2.dtd">
+<Uczelnia>
+  <Wydzial> 
+    <Nazwa> WFiIS </Nazwa>
+    <Kierunek> 
+      <Nazwa>Informatyka Stosowana</Nazwa>
+      <Studenci>
+      
+        <Student>
+          <Imie>Marcin</Imie>
+          <Nazwisko>Babacki</Nazwisko> 
+          <index>234</index>
+        </Student>
+        <Student>
+          <Imie>Marcin</Imie>
+          <Nazwisko>Babacki</Nazwisko> 
+          <index>234</index>
+        </Student>
+        <Student>
+          <Imie>Marcin</Imie>
+          <Nazwisko>Babacki</Nazwisko> 
+          <index>234</index>
+        </Student>
+        
+      </Studenci>
+    </Kierunek>
+  </Wydzial>
+</Uczelnia>

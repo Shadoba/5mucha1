@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="xsd:schema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="xsd:element" maxOccurs="unbounded"/>
+        <xs:element ref="xsd:complexType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xsd:element">
+    <xs:complexType>
+      <xs:attribute name="maxOccurs" type="xs:string"/>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="ref" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xsd:complexType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="xsd:sequence"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xsd:sequence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="xsd:element" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
