@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="./Uczelnia.css"?>
+<!DOCTYPE Uczelnia SYSTEM "Uczelnia.dtd">
+
+<Uczelnia
+xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./Uczelnia.xsd">
+  <Wydzial> 
+    <Nazwa> WFiIS </Nazwa>
+    <Kierunek> 
+      <Nazwa>Informatyka Stosowana</Nazwa>
+      <Studenci>
+      
+        <Student>
+          <Imie>Marcin</Imie>
+          <Nazwisko>Babacki</Nazwisko> 
+          <Index>234</Index>
+        </Student>
+        <Student>
+          <Imie>Marcin</Imie>
+          <Imie>Jakub</Imie>
+          <Nazwisko>Gabacki</Nazwisko> 
+          <Index>235</Index>
+        </Student>
+        <Student>
+          <Imie>Marcin</Imie>
+          <Nazwisko>Chabacki</Nazwisko> 
+          <Index>236</Index>
+        </Student>
+        
+      </Studenci>
+    </Kierunek>
+  </Wydzial>
+</Uczelnia>

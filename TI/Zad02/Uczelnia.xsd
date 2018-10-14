@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xsd:element name="Uczelnia">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Wydzial" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Wydzial">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Nazwa" type="xsd:string" maxOccurs="1"/>
+        <xsd:element ref="Kierunek" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Kierunek">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Nazwa" type="xsd:string" maxOccurs="1"/>
+        <xsd:element ref="Studenci" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Studenci">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Student" maxOccurs="3"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Student">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Imie" type="xsd:string" maxOccurs="2"/>
+        <xsd:element name="Nazwisko" type="xsd:string" maxOccurs="1"/>
+        <xsd:element ref="Index" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Index">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:minInclusive value="100"/>
+        <xsd:maxInclusive value="400"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+</xsd:schema>

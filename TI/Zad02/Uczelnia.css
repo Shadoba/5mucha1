@@ -1,0 +1,57 @@
+Uczelnia {
+    font-family:  Courier;
+    font-size: 14px;
+    max-width: 400px;
+}
+
+Wydzial, Kierunek, Studenci {
+    display: block;
+}
+
+Wydzial {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid rgb(139, 46, 46);
+}
+
+Wydzial Nazwa {
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(80, 13, 13);
+    color: rgb(226, 209, 192);
+    display: block;
+}
+
+Wydzial Kierunek{
+    background-color: rgb(139, 46, 46);
+    line-height: 1.5;
+}
+
+Wydzial Kierunek Nazwa{
+    padding: 10px;
+    background-color: rgb(139, 46, 46);
+    color: rgb(226, 209, 192);
+    display: block;
+}
+
+Wydzial Kierunek Studenci{
+    padding-block-end: 10px;
+}
+
+Wydzial Kierunek Studenci Student {
+    display: block;
+    background-color: rgb(188, 143, 143);
+    border: 1px solid rgb(139, 46, 46);
+    border-left-color: transparent;
+    margin-left: 20px;
+}
+
+Wydzial Kierunek Studenci Student:hover{
+    background-color: red;
+}
+
+Wydzial Kierunek Studenci Student Index{
+    font-weight: bold;
+    float: right;
+    margin-inline-end: 10px
+}

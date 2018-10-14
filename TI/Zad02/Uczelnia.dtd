@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Uczelnia (Wydzial)+>
+
+<!ELEMENT Wydzial (Nazwa,Kierunek+)>
+
+<!ELEMENT Nazwa (#PCDATA)>
+
+<!ELEMENT Kierunek (Nazwa,Studenci)>
+
+<!ELEMENT Studenci (Student)+>
+
+<!ELEMENT Student (Imie+,Nazwisko,Index)>
+
+<!ELEMENT Imie (#PCDATA)>
+
+<!ELEMENT Nazwisko (#PCDATA)>
+
+<!ELEMENT Index (#PCDATA)>
