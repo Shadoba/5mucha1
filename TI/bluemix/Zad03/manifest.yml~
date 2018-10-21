@@ -1,7 +1,0 @@
-applications:
-  - disk_quota: 512M
-    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-    name: ShadobaBlueMix
-    path: ./bluemix
-    instances: 1
-    memory: 512M
